@@ -1,0 +1,5 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'WYASIHTTPRequest_Example', :exclusive => true do
+  pod "WYASIHTTPRequest", :path => "../"
+end

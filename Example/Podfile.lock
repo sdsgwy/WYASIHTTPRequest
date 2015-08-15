@@ -1,0 +1,14 @@
+PODS:
+  - WYASIHTTPRequest (0.1.0)
+
+DEPENDENCIES:
+  - WYASIHTTPRequest (from `../`)
+
+EXTERNAL SOURCES:
+  WYASIHTTPRequest:
+    :path: ../
+
+SPEC CHECKSUMS:
+  WYASIHTTPRequest: 8f1c224f7b892c75af60afa8d0f9fefa4f88f2de
+
+COCOAPODS: 0.38.2

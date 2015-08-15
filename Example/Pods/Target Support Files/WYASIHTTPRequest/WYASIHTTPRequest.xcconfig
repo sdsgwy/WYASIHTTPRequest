@@ -1,0 +1,2 @@
+WYASIHTTPREQUEST_HEADER_SEARCH_PATHS = $(SDKROOT)/usr/include/libxml2
+WYASIHTTPREQUEST_OTHER_LDFLAGS = -l"xml2" -l"z" -framework "CFNetwork" -framework "CoreGraphics" -framework "MobileCoreServices" -framework "SystemConfiguration"

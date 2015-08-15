@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		027274D04E33A4F878F1888F7D14603A /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A92108D62542AD0157FD0C4957FFA6DD /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		047006AF32BA8A6632C027C253AD5640 /* ASICacheDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 60B791F311107F53F5D5D69155E8554B /* ASICacheDelegate.h */; };
+		0CC6501E249453FE98B714B2C82D6716 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CCC3D6D179D4B5E481001BDF3B0373 /* Foundation.framework */; };
+		13E5593681205401ABE5C669A9B11A85 /* ASIDataCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = B18949857C7592E24BC1FE32C4BC55B2 /* ASIDataCompressor.h */; };
+		2A2E73AD527A5E4D2D768A3C18BE7B73 /* ASIInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = CB2D92B54D387A1F32D16CC697FADC91 /* ASIInputStream.h */; };
+		31EDB63068FBC59FE04B24BEBC86D87F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6C7199722BB2E19F4346B0D142FD4B /* MobileCoreServices.framework */; };
+		35C1BD54957AF40B55CA484B62C5DF9D /* ASIHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EC93722C87B436E1E58FE82CD9E2D1C /* ASIHTTPRequest.h */; };
+		375C5ADFEAA501B5450BE32572BA0A8A /* WYASIHTTPRequest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C35C768F0E9A482FA817B000C9704537 /* WYASIHTTPRequest-dummy.m */; };
+		38C499EB2E068D92F1566FA22F6C9BF0 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C64BA7502A1FDBA3530FF40C14AEF7 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3A44D0E89121DBC6289796F83878A996 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 98FCF3B4557D641E1F9F89125DC0A742 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		44CF020DDF87D2903A529548E5D2A628 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC09C63431DAD1906BE946BBD008689 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		478869FD4FF21CD8C8AD15CC476456CE /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E26988DD6BEE9AABDCBAABA3161D9A /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4E276C12AAE382738405ABDC507DF8B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600E797F4DCAABE37F1E7A19C4A9A4C4 /* CoreGraphics.framework */; };
+		59622A69DA81915C49E8D288A86C6ED2 /* ASIProgressDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B02079167D4012175CE4F6A993910641 /* ASIProgressDelegate.h */; };
+		5B1F587D402A70C0EC020C0ECD05E0D3 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 4457FE28F8284CA6D038EF4A4D43BF6B /* Reachability.h */; };
+		6943C9EE083D07D38410A3B476FBE7B9 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CD37CA2F6C52C14BB35DDE53248B6812 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		69C66489280B8692D8B15F95A53CC387 /* ASIFormDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FF08F60EF136E87E2C7F102B139A2C4 /* ASIFormDataRequest.h */; };
+		6C20EFAE2478322C537A5AE082595C61 /* ASIHTTPRequestConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 3517583495C02986D262A3A771AA2B3D /* ASIHTTPRequestConfig.h */; };
+		7B86D8902B521DAD35C6601424E5F1EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CCC3D6D179D4B5E481001BDF3B0373 /* Foundation.framework */; };
+		822F362C73D6AAA6BADD5DB98011516C /* Pods-WYASIHTTPRequest_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8ABE17FAF9F2A2B0992DF66DC45D37 /* Pods-WYASIHTTPRequest_Example-dummy.m */; };
+		8597131568CB391E143DF5E321CE0E9E /* ASINetworkQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A87C9954B49C168D601317A2D0E0B60 /* ASINetworkQueue.h */; };
+		8F93EB41C800BAABA086BD7C5AD30259 /* ASIDownloadCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 92678262BD84D7A8CDF4867036C9D1CF /* ASIDownloadCache.h */; };
+		93BEE1A4B11A0771B7431EDE18B5B0B9 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = DA22A55A91DB35FA79E5AE0FBF53178F /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4C022E7648AEA6D1C6E539378E56503 /* ASIHTTPRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C0E1329B1F4EF78E60F5CD5FDF215727 /* ASIHTTPRequestDelegate.h */; };
+		AA7FDA481EE31EB6AD451E6CFA518E3E /* ASIDataDecompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = A4B145764FE4A32F8A3141EC932608A2 /* ASIDataDecompressor.h */; };
+		B9BF491B9B1D418A4A021AB81A157658 /* ASIAuthenticationDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = C85DCD6ECB65DFF83ACC1D444BBFB005 /* ASIAuthenticationDialog.h */; };
+		E75AD1C1B59BE5E233206CDB35759D63 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4B9835B2E41800835354EC5B31D8FC /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EA0B6E711DC7BB599496FB322866ADB2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA467EF3EA3357417028C133EBAFF22 /* CFNetwork.framework */; };
+		FB9D8D302049E6A56420AD091246FD18 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B875C657E01B2659239D5EC736F38040 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FEEB940A13E93CEB1A5308310B6001A8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADAA9EB499D81F57450C63D8F8D44C7E /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9C9C2DD30D7128FFC66B1EA68E33280 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A90134FD31603D0EAF919E1738EDE4A5;
+			remoteInfo = WYASIHTTPRequest;
+		};
+		F316B80DBFA3885D31A9D61F9B74D94B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E4A3F88FED7FAE0702AC4B94F4063E0;
+			remoteInfo = "WYASIHTTPRequest-WYASIHTTPRequest";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00C349F3DA1222B8B45DD74CEFE00B00 /* libPods-WYASIHTTPRequest_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WYASIHTTPRequest_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DC09C63431DAD1906BE946BBD008689 /* ASIDataCompressor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		18A97AF6D5823CD7390909229F58F4B9 /* Pods-WYASIHTTPRequest_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WYASIHTTPRequest_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		20CCC3D6D179D4B5E481001BDF3B0373 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2A87C9954B49C168D601317A2D0E0B60 /* ASINetworkQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		3517583495C02986D262A3A771AA2B3D /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		37F0158614C1B4E0D6F9857F66D60E9A /* Pods-WYASIHTTPRequest_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WYASIHTTPRequest_Example-resources.sh"; sourceTree = "<group>"; };
+		40E26988DD6BEE9AABDCBAABA3161D9A /* ASIFormDataRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		4457FE28F8284CA6D038EF4A4D43BF6B /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		4AA983137D4DE791C8B3FA6F18AB06BB /* WYASIHTTPRequest-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "WYASIHTTPRequest-Private.xcconfig"; sourceTree = "<group>"; };
+		600E797F4DCAABE37F1E7A19C4A9A4C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		60B791F311107F53F5D5D69155E8554B /* ASICacheDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		6AA467EF3EA3357417028C133EBAFF22 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		6EC93722C87B436E1E58FE82CD9E2D1C /* ASIHTTPRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		705C3603FB4116046F18A352F30DF865 /* WYASIHTTPRequest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WYASIHTTPRequest-prefix.pch"; sourceTree = "<group>"; };
+		726831AB37FBED73AEFCB62C0DA66FC5 /* Pods-WYASIHTTPRequest_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WYASIHTTPRequest_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		7FF08F60EF136E87E2C7F102B139A2C4 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		92678262BD84D7A8CDF4867036C9D1CF /* ASIDownloadCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		98FCF3B4557D641E1F9F89125DC0A742 /* ASIInputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		9A8ABE17FAF9F2A2B0992DF66DC45D37 /* Pods-WYASIHTTPRequest_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WYASIHTTPRequest_Example-dummy.m"; sourceTree = "<group>"; };
+		A4B145764FE4A32F8A3141EC932608A2 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		A92108D62542AD0157FD0C4957FFA6DD /* ASIDownloadCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		AC2E25255D9BEA129320E3B9A5EBA651 /* libWYASIHTTPRequest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWYASIHTTPRequest.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADAA9EB499D81F57450C63D8F8D44C7E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		B02079167D4012175CE4F6A993910641 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		B18949857C7592E24BC1FE32C4BC55B2 /* ASIDataCompressor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		B2CC21B00F08FF8ABE76C842225BD4BC /* Pods-WYASIHTTPRequest_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WYASIHTTPRequest_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B875C657E01B2659239D5EC736F38040 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C0E1329B1F4EF78E60F5CD5FDF215727 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		C35C768F0E9A482FA817B000C9704537 /* WYASIHTTPRequest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WYASIHTTPRequest-dummy.m"; sourceTree = "<group>"; };
+		C85DCD6ECB65DFF83ACC1D444BBFB005 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		CB2D92B54D387A1F32D16CC697FADC91 /* ASIInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		CD37CA2F6C52C14BB35DDE53248B6812 /* ASINetworkQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		D0C64BA7502A1FDBA3530FF40C14AEF7 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		DA22A55A91DB35FA79E5AE0FBF53178F /* ASIDataDecompressor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		DD80FD04A80FBA13CFDFB59E3B33B7DF /* WYASIHTTPRequest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WYASIHTTPRequest.xcconfig; sourceTree = "<group>"; };
+		DF4B9835B2E41800835354EC5B31D8FC /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		ED6C7199722BB2E19F4346B0D142FD4B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		F131862171A7DBF5BF21F22B3EC3EC00 /* Pods-WYASIHTTPRequest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WYASIHTTPRequest_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FCE60EBE9A20877A133D48C9ECC5C43C /* WYASIHTTPRequest.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WYASIHTTPRequest.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		065DB8B779AA6DA6C896C183863880E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0B6E711DC7BB599496FB322866ADB2 /* CFNetwork.framework in Frameworks */,
+				4E276C12AAE382738405ABDC507DF8B5 /* CoreGraphics.framework in Frameworks */,
+				7B86D8902B521DAD35C6601424E5F1EF /* Foundation.framework in Frameworks */,
+				31EDB63068FBC59FE04B24BEBC86D87F /* MobileCoreServices.framework in Frameworks */,
+				FEEB940A13E93CEB1A5308310B6001A8 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FC9C46BF0B96ACB3EB7519C92EE869F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CC6501E249453FE98B714B2C82D6716 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0DC8BB2CD77525469E72519E22DC7CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		147C0C2CF3161D60F270D3FDCD69DA3E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6AA467EF3EA3357417028C133EBAFF22 /* CFNetwork.framework */,
+				600E797F4DCAABE37F1E7A19C4A9A4C4 /* CoreGraphics.framework */,
+				20CCC3D6D179D4B5E481001BDF3B0373 /* Foundation.framework */,
+				ED6C7199722BB2E19F4346B0D142FD4B /* MobileCoreServices.framework */,
+				ADAA9EB499D81F57450C63D8F8D44C7E /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		1CCD383D2985575400346683116A047F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BF5B8F3A6F80A16078CEA9EF2DC0CF9 /* WYASIHTTPRequest */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				147C0C2CF3161D60F270D3FDCD69DA3E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2EEB9A95923F666E151A91EC4A96CA0F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD80FD04A80FBA13CFDFB59E3B33B7DF /* WYASIHTTPRequest.xcconfig */,
+				4AA983137D4DE791C8B3FA6F18AB06BB /* WYASIHTTPRequest-Private.xcconfig */,
+				C35C768F0E9A482FA817B000C9704537 /* WYASIHTTPRequest-dummy.m */,
+				705C3603FB4116046F18A352F30DF865 /* WYASIHTTPRequest-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WYASIHTTPRequest";
+			sourceTree = "<group>";
+		};
+		41FB395505A3E7FDA87EACF8FA66EA2F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				66E957EF451963E33F36ADE456F65E1D /* Pods-WYASIHTTPRequest_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		66E957EF451963E33F36ADE456F65E1D /* Pods-WYASIHTTPRequest_Example */ = {
+			isa = PBXGroup;
+			children = (
+				18A97AF6D5823CD7390909229F58F4B9 /* Pods-WYASIHTTPRequest_Example-acknowledgements.markdown */,
+				726831AB37FBED73AEFCB62C0DA66FC5 /* Pods-WYASIHTTPRequest_Example-acknowledgements.plist */,
+				9A8ABE17FAF9F2A2B0992DF66DC45D37 /* Pods-WYASIHTTPRequest_Example-dummy.m */,
+				37F0158614C1B4E0D6F9857F66D60E9A /* Pods-WYASIHTTPRequest_Example-resources.sh */,
+				B2CC21B00F08FF8ABE76C842225BD4BC /* Pods-WYASIHTTPRequest_Example.debug.xcconfig */,
+				F131862171A7DBF5BF21F22B3EC3EC00 /* Pods-WYASIHTTPRequest_Example.release.xcconfig */,
+			);
+			name = "Pods-WYASIHTTPRequest_Example";
+			path = "Target Support Files/Pods-WYASIHTTPRequest_Example";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				1CCD383D2985575400346683116A047F /* Development Pods */,
+				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				41FB395505A3E7FDA87EACF8FA66EA2F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8BF5B8F3A6F80A16078CEA9EF2DC0CF9 /* WYASIHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				A6DD6817E889C426DC46E26D433B3131 /* Pod */,
+				2EEB9A95923F666E151A91EC4A96CA0F /* Support Files */,
+			);
+			name = WYASIHTTPRequest;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A6DD6817E889C426DC46E26D433B3131 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				ED320C3AD33D1827264A3171CAED8A47 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCE60EBE9A20877A133D48C9ECC5C43C /* WYASIHTTPRequest.bundle */,
+				00C349F3DA1222B8B45DD74CEFE00B00 /* libPods-WYASIHTTPRequest_Example.a */,
+				AC2E25255D9BEA129320E3B9A5EBA651 /* libWYASIHTTPRequest.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED320C3AD33D1827264A3171CAED8A47 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C85DCD6ECB65DFF83ACC1D444BBFB005 /* ASIAuthenticationDialog.h */,
+				D0C64BA7502A1FDBA3530FF40C14AEF7 /* ASIAuthenticationDialog.m */,
+				60B791F311107F53F5D5D69155E8554B /* ASICacheDelegate.h */,
+				B18949857C7592E24BC1FE32C4BC55B2 /* ASIDataCompressor.h */,
+				0DC09C63431DAD1906BE946BBD008689 /* ASIDataCompressor.m */,
+				A4B145764FE4A32F8A3141EC932608A2 /* ASIDataDecompressor.h */,
+				DA22A55A91DB35FA79E5AE0FBF53178F /* ASIDataDecompressor.m */,
+				92678262BD84D7A8CDF4867036C9D1CF /* ASIDownloadCache.h */,
+				A92108D62542AD0157FD0C4957FFA6DD /* ASIDownloadCache.m */,
+				7FF08F60EF136E87E2C7F102B139A2C4 /* ASIFormDataRequest.h */,
+				40E26988DD6BEE9AABDCBAABA3161D9A /* ASIFormDataRequest.m */,
+				6EC93722C87B436E1E58FE82CD9E2D1C /* ASIHTTPRequest.h */,
+				B875C657E01B2659239D5EC736F38040 /* ASIHTTPRequest.m */,
+				3517583495C02986D262A3A771AA2B3D /* ASIHTTPRequestConfig.h */,
+				C0E1329B1F4EF78E60F5CD5FDF215727 /* ASIHTTPRequestDelegate.h */,
+				CB2D92B54D387A1F32D16CC697FADC91 /* ASIInputStream.h */,
+				98FCF3B4557D641E1F9F89125DC0A742 /* ASIInputStream.m */,
+				2A87C9954B49C168D601317A2D0E0B60 /* ASINetworkQueue.h */,
+				CD37CA2F6C52C14BB35DDE53248B6812 /* ASINetworkQueue.m */,
+				B02079167D4012175CE4F6A993910641 /* ASIProgressDelegate.h */,
+				4457FE28F8284CA6D038EF4A4D43BF6B /* Reachability.h */,
+				DF4B9835B2E41800835354EC5B31D8FC /* Reachability.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7E20DA8F9ACC83C9626176FD7EA38243 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9BF491B9B1D418A4A021AB81A157658 /* ASIAuthenticationDialog.h in Headers */,
+				047006AF32BA8A6632C027C253AD5640 /* ASICacheDelegate.h in Headers */,
+				13E5593681205401ABE5C669A9B11A85 /* ASIDataCompressor.h in Headers */,
+				AA7FDA481EE31EB6AD451E6CFA518E3E /* ASIDataDecompressor.h in Headers */,
+				8F93EB41C800BAABA086BD7C5AD30259 /* ASIDownloadCache.h in Headers */,
+				69C66489280B8692D8B15F95A53CC387 /* ASIFormDataRequest.h in Headers */,
+				35C1BD54957AF40B55CA484B62C5DF9D /* ASIHTTPRequest.h in Headers */,
+				6C20EFAE2478322C537A5AE082595C61 /* ASIHTTPRequestConfig.h in Headers */,
+				A4C022E7648AEA6D1C6E539378E56503 /* ASIHTTPRequestDelegate.h in Headers */,
+				2A2E73AD527A5E4D2D768A3C18BE7B73 /* ASIInputStream.h in Headers */,
+				8597131568CB391E143DF5E321CE0E9E /* ASINetworkQueue.h in Headers */,
+				59622A69DA81915C49E8D288A86C6ED2 /* ASIProgressDelegate.h in Headers */,
+				5B1F587D402A70C0EC020C0ECD05E0D3 /* Reachability.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7E4A3F88FED7FAE0702AC4B94F4063E0 /* WYASIHTTPRequest-WYASIHTTPRequest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65A0AC2797BE12A52048D2174830A1C8 /* Build configuration list for PBXNativeTarget "WYASIHTTPRequest-WYASIHTTPRequest" */;
+			buildPhases = (
+				1B333D5DEF3580646074240AE24F1D60 /* Sources */,
+				E0DC8BB2CD77525469E72519E22DC7CC /* Frameworks */,
+				6558C850DFA30E5DF7DE763329507BFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WYASIHTTPRequest-WYASIHTTPRequest";
+			productName = "WYASIHTTPRequest-WYASIHTTPRequest";
+			productReference = FCE60EBE9A20877A133D48C9ECC5C43C /* WYASIHTTPRequest.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		A90134FD31603D0EAF919E1738EDE4A5 /* WYASIHTTPRequest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4940D88587C6A509C450B32961A2397E /* Build configuration list for PBXNativeTarget "WYASIHTTPRequest" */;
+			buildPhases = (
+				54AAEBEACCA90C207D61D5038954913F /* Sources */,
+				065DB8B779AA6DA6C896C183863880E6 /* Frameworks */,
+				7E20DA8F9ACC83C9626176FD7EA38243 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4A68CF6C817C97CAE3349E0018747EB /* PBXTargetDependency */,
+			);
+			name = WYASIHTTPRequest;
+			productName = WYASIHTTPRequest;
+			productReference = AC2E25255D9BEA129320E3B9A5EBA651 /* libWYASIHTTPRequest.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AA82C0E551D2CB45D8159BB6EA448E56 /* Pods-WYASIHTTPRequest_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E20FED902F200887EF1EE5237563A2B /* Build configuration list for PBXNativeTarget "Pods-WYASIHTTPRequest_Example" */;
+			buildPhases = (
+				C9ADF7719FD46396F83A00648C471753 /* Sources */,
+				2FC9C46BF0B96ACB3EB7519C92EE869F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6F63D260FD4D025D9A0E20B90EFF47B /* PBXTargetDependency */,
+			);
+			name = "Pods-WYASIHTTPRequest_Example";
+			productName = "Pods-WYASIHTTPRequest_Example";
+			productReference = 00C349F3DA1222B8B45DD74CEFE00B00 /* libPods-WYASIHTTPRequest_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA82C0E551D2CB45D8159BB6EA448E56 /* Pods-WYASIHTTPRequest_Example */,
+				A90134FD31603D0EAF919E1738EDE4A5 /* WYASIHTTPRequest */,
+				7E4A3F88FED7FAE0702AC4B94F4063E0 /* WYASIHTTPRequest-WYASIHTTPRequest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6558C850DFA30E5DF7DE763329507BFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B333D5DEF3580646074240AE24F1D60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54AAEBEACCA90C207D61D5038954913F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38C499EB2E068D92F1566FA22F6C9BF0 /* ASIAuthenticationDialog.m in Sources */,
+				44CF020DDF87D2903A529548E5D2A628 /* ASIDataCompressor.m in Sources */,
+				93BEE1A4B11A0771B7431EDE18B5B0B9 /* ASIDataDecompressor.m in Sources */,
+				027274D04E33A4F878F1888F7D14603A /* ASIDownloadCache.m in Sources */,
+				478869FD4FF21CD8C8AD15CC476456CE /* ASIFormDataRequest.m in Sources */,
+				FB9D8D302049E6A56420AD091246FD18 /* ASIHTTPRequest.m in Sources */,
+				3A44D0E89121DBC6289796F83878A996 /* ASIInputStream.m in Sources */,
+				6943C9EE083D07D38410A3B476FBE7B9 /* ASINetworkQueue.m in Sources */,
+				E75AD1C1B59BE5E233206CDB35759D63 /* Reachability.m in Sources */,
+				375C5ADFEAA501B5450BE32572BA0A8A /* WYASIHTTPRequest-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9ADF7719FD46396F83A00648C471753 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				822F362C73D6AAA6BADD5DB98011516C /* Pods-WYASIHTTPRequest_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4A68CF6C817C97CAE3349E0018747EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "WYASIHTTPRequest-WYASIHTTPRequest";
+			target = 7E4A3F88FED7FAE0702AC4B94F4063E0 /* WYASIHTTPRequest-WYASIHTTPRequest */;
+			targetProxy = F316B80DBFA3885D31A9D61F9B74D94B /* PBXContainerItemProxy */;
+		};
+		E6F63D260FD4D025D9A0E20B90EFF47B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WYASIHTTPRequest;
+			target = A90134FD31603D0EAF919E1738EDE4A5 /* WYASIHTTPRequest */;
+			targetProxy = A9C9C2DD30D7128FFC66B1EA68E33280 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5698F8F31110A32053CCE37252574B4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AA983137D4DE791C8B3FA6F18AB06BB /* WYASIHTTPRequest-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = WYASIHTTPRequest;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		5FEEF4D1948AF8B93D774AF37F552AD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F131862171A7DBF5BF21F22B3EC3EC00 /* Pods-WYASIHTTPRequest_Example.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		98458096782C7BB71B9AC2D2BCBF7731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AA983137D4DE791C8B3FA6F18AB06BB /* WYASIHTTPRequest-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WYASIHTTPRequest/WYASIHTTPRequest-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9F47CDE15245B5D1DE508C5B48C65454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AA983137D4DE791C8B3FA6F18AB06BB /* WYASIHTTPRequest-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = WYASIHTTPRequest;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		E0BE2C5D48AFADEEF88FBE0FB98F94F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2CC21B00F08FF8ABE76C842225BD4BC /* Pods-WYASIHTTPRequest_Example.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F5AD68603105B14E9CF2C98F292EEC8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AA983137D4DE791C8B3FA6F18AB06BB /* WYASIHTTPRequest-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WYASIHTTPRequest/WYASIHTTPRequest-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
+				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E20FED902F200887EF1EE5237563A2B /* Build configuration list for PBXNativeTarget "Pods-WYASIHTTPRequest_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0BE2C5D48AFADEEF88FBE0FB98F94F8 /* Debug */,
+				5FEEF4D1948AF8B93D774AF37F552AD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4940D88587C6A509C450B32961A2397E /* Build configuration list for PBXNativeTarget "WYASIHTTPRequest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5AD68603105B14E9CF2C98F292EEC8C /* Debug */,
+				98458096782C7BB71B9AC2D2BCBF7731 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65A0AC2797BE12A52048D2174830A1C8 /* Build configuration list for PBXNativeTarget "WYASIHTTPRequest-WYASIHTTPRequest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5698F8F31110A32053CCE37252574B4F /* Debug */,
+				9F47CDE15245B5D1DE508C5B48C65454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

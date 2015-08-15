@@ -1,0 +1,38 @@
+{
+  "name": "WYASIHTTPRequest",
+  "version": "0.1.0",
+  "summary": "A short description of WYASIHTTPRequest.",
+  "description": "An optional longer description of WYASIHTTPRequest\n\n* Markdown format.\n* Don't worry about the indent, we strip it!",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/WYASIHTTPRequest",
+  "license": "MIT",
+  "authors": {
+    "sdsgwy": "sunshineyangzai@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/WYASIHTTPRequest.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": false,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "WYASIHTTPRequest": [
+      "Pod/Assets/*.png"
+    ]
+  },
+  "libraries": [
+    "z",
+    "xml2"
+  ],
+  "frameworks": [
+    "CFNetwork",
+    "SystemConfiguration",
+    "MobileCoreServices",
+    "CoreGraphics"
+  ],
+  "xcconfig": {
+    "HEADER_SEARCH_PATHS": "$(SDKROOT)/usr/include/libxml2"
+  }
+}
